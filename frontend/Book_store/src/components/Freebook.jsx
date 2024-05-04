@@ -45,7 +45,7 @@ export default function Freebook() {
     
   return (
     <>
-    <div className='max-w-screen-2xl container mx-auto md:px-20 px-4'>
+    <div className='max-w-screen-2xl container dark:bg-white dark:text-black mx-auto md:px-20 px-4'>
      <div>
       <h1 className=' font-semibold text-xl pb-2'>Free Book Course</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum explicabo dolores est cum vel sint culpa voluptate illum iusto, porro, voluptates ex enim incidunt consectetur quo veniam natus distinctio quidem.</p>
