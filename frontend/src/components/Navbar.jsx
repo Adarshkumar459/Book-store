@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 import {Link }from "react-router-dom"
+import Login from './Login';
 
 function Navbar() {
     // Dark theme apply 
@@ -52,12 +53,12 @@ function Navbar() {
                 ?"sticky-navbar shadow-md bg-base-200 duration-300  transition-all ease-in-out":"" 
             }`}>
             <div className="navbar ">
-                        <div className="navbar-start">
-                        <div className="dropdown">
-                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-7 6h16" /></svg>
+                        <div className="navbar-start ">
+                        <div className="dropdown ">
+                         <div tabIndex={0} role="button" className="btn btn-ghost  lg:hidden">
+                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5  w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-7 6h16" /></svg>
                          </div>
-                          <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"> {navItem}
+                          <ul tabIndex={0} className="menu menu-sm dark:bg-white dark:text-black dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"> {navItem}
                           </ul>
                          
                          </div>
@@ -105,7 +106,9 @@ function Navbar() {
                             
                         </label>
                   <div className="">
-                    <a className=" dark:bg-pink-500 text-white px-3 py-2 hover:bg-slate-800 duration-300  cursor-pointer rounded-md">Login</a>
+                    <a className=" bg-pink-500 text-white px-3 py-2 hover:bg-pink-800 duration-300  cursor-pointer rounded-md "
+                        onClick={()=> document.getElementById("my_modal_3").showModal()}>Login</a>
+                        <Login/>
                     </div>
                     </div>
                     </div>

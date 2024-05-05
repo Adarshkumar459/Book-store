@@ -9,7 +9,9 @@ function Home() {
    <>
     <div className='dark:bg-white dark:text-black'> 
     <Navbar/>
-     <Banner />
+    <div >
+       <Banner />
+     </div>
      <Freebook />
      <Footer />
     </div>
