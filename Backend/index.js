@@ -2,14 +2,17 @@ import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import cors from "cors";
-import userRoute from "./routes/user.route.js"
 
+// import routes
+import userRoute from "./routes/user.route.js"
 import bookRoute from "./routes/book.route.js"
+
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
+// env file attetch
 dotenv.config();
 const PORT = process.env.PORT || 4000;
 const URI = "mongodb://localhost:27017/bookstore";
